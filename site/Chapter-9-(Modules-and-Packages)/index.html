@@ -13,7 +13,7 @@
     
     
       
-        <title>Getting Started - LearnPython</title>
+        <title>Chapter 9 (Modules and Packages) - LearnPython</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#what-are-modules" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started
+              Chapter 9 (Modules and Packages)
             
           </span>
         </div>
@@ -257,8 +257,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -267,36 +265,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-create-a-repo" class="md-nav__link">
-    Step 1: Create a Repo
+  <a href="#what-are-modules" class="md-nav__link">
+    What are modules
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-deal-with-the-repo" class="md-nav__link">
-    Step 2: Deal with the Repo
+  <a href="#what-are-packages" class="md-nav__link">
+    What are packages
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-set-up-and-installation" class="md-nav__link">
-    Step 3: Set-Up and Installation
+  <a href="#the-math-module" class="md-nav__link">
+    The Math Module
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-minor-bugfixes" class="md-nav__link">
-    Step 4: Minor Bugfixes
+  <a href="#importing-the-math-module" class="md-nav__link">
+    Importing the Math module
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-5-deploy-and-commit" class="md-nav__link">
-    Step 5: Deploy and Commit
+  <a href="#importing-the-random-module" class="md-nav__link">
+    Importing the Random module
   </a>
   
 </li>
@@ -314,38 +312,82 @@
               
                 
 
-<h1 id="getting-started">Getting Started</h1>
-<p>How do you use <code>astrosite</code>? Here's a guide for you.</p>
-<h2 id="step-1-create-a-repo">Step 1: Create a Repo</h2>
-<p>Create a repo by going to  the <a href="https://github.com/NUSH-Astro/astrosite"><code>astrosite</code> repo</a> and clicking "Use this template" as shown below:</p>
-<p><img alt="" src="../img/template1.png" /></p>
-<p>This will lead you to another page to generate a repository from this template as shown below. Make sure to create this repo in the <a href="https://github.com/NUSH-Astro">NUSH-Astro</a> GitHub Organisation and Provide a useful name and description for the repo. Make sure to make the repo public, otherwise deployment is not possible. Click "Create repository from template" when done.</p>
-<p><img alt="" src="../img/template2.png" /></p>
-<h2 id="step-2-deal-with-the-repo">Step 2: Deal with the Repo</h2>
-<p>This will lead you to the newly created GitHub Repo, in this case <a href="https://github.com/NUSH-Astro/cosmology">https://github.com/NUSH-Astro/cosmology</a>, and you can now click the "Code" button and copy the Repo address as shown. This will be useful for downloading the repo and then administrating it.</p>
-<p><img alt="" src="../img/copygithub.png" /></p>
-<p>Next, go to your terminal (for the purposes of this tutorial, I am using Git Bash), and clone the repository into a specific folder. Now, move into this newly created folder and run <code>./setup.sh</code> on some bash-supporting terminal.</p>
-<p><img alt="" src="../img/gitbash.png" /></p>
-<h2 id="step-3-set-up-and-installation">Step 3: Set-Up and Installation</h2>
-<p>This installation expects that you already have Python and Git Installed. If you don't, do install them from relevant sources.</p>
-<p>Next, the setup file will install <code>mkdocs</code> and <code>mkdocs-material</code> from <code>pip</code> , allowing you to now convert these markdown files to HTML. Following this, it will open a <code>Nano</code> tab to input the name of the site. Make sure to convert <code>astrosite</code> to your preferred domain choice (domain choices have been stated, but can be added by contacting Prannaya), in this case <code>cosmo</code>. Press <code>Ctrl-O</code>, <code>Enter</code> and <code>Ctrl-X</code> when you are done.</p>
-<p><img alt="" src="../img/nanochange.png" /></p>
-<p>Now, the setup file will deploy the site and you should probably be able to see the following messages:</p>
-<p><img alt="" src="../img/deploymentmsg.png" /></p>
-<p>This is mostly unimportant, but the main thing to note is that the CNAME file has been updated.</p>
-<h2 id="step-4-minor-bugfixes">Step 4: Minor Bugfixes</h2>
-<p>Now, need to open the <code>mkdocs.yml</code> file to change the name of the Site, simply by typing <code>nano mkdocs.yml</code> as shown.</p>
-<p><img alt="" src="../img/openyml.png" /></p>
-<p>From here, it opens the Nano Tab and you can change the site name from <code>AstroSite</code> to any name, containing some reference to the topic at hand. In this case, it has been renamed to <code>Cosmology</code>. Press <code>Ctrl-O</code>, <code>Enter</code> and <code>Ctrl-X</code> when you are done.</p>
-<p><img alt="" src="../img/convertname.png" /></p>
-<h2 id="step-5-deploy-and-commit">Step 5: Deploy and Commit</h2>
-<p>From here, you can now deploy the site again by typing out <code>./deploy.sh</code> as shown.</p>
-<p><img alt="" src="../img/deployagain.png" /></p>
-<p>From here, the site is now being deployed, and you can visit it in about 3 or 4 minutes. Till then, you can push the repo up by doing the following commands:</p>
-<p><img alt="" src="../img/gitmaster.png" /></p>
-<p>After this, you can simply access it from the site, in this case <a href="http://cosmo.nushastro.ml/">http://cosmo.nushastro.ml/</a>, as shown below:</p>
-<p><img alt="" src="../img/newsite.png" /></p>
-<p>And there you have it! A working site with editability based on Markdown (which also happens to support MathJax). I hope this helps you use this site. Thank you.</p>
+  <h1>Chapter 9 (Modules and Packages)</h1>
+
+<h2 id="what-are-modules">What are modules</h2>
+<p>Modules are .py files containing useful snippets of code that are put inside functions. We are allowed to call those functions to perform complicated tasks that we do not have to program out ourselves. Other people have already done the legwork in making the functions, simplified their use, and shared it with us using modules.</p>
+<h2 id="what-are-packages">What are packages</h2>
+<p>Packages are a collection of modules, often grouping together modules under a common purpose, for example one package might be created for images, and one module inside could group together displaying an image, while another module could handle making alterations to the image.</p>
+<p><img alt="" src="https://python-course.eu/images/python-tutorial/packages_300w.webp" /></p>
+<p>You are also able to create your own packages, although that is not covered in these notes, there will be links to supplementary materials at the end if you are interested.</p>
+<h2 id="the-math-module">The Math Module</h2>
+<p>The Math module is part of the python standard library, and contains many commonly used mathematical functions. These are some of the categories of functions that the Math module provides us access to.</p>
+<blockquote>
+<p>math — Mathematical functions</p>
+<blockquote>
+<p>Number-theoretic and representation functions \
+Power and logarithmic functions \
+Trigonometric functions \
+Angular conversion \
+Hyperbolic functions \
+Special functions \
+Constants</p>
+</blockquote>
+</blockquote>
+<h2 id="importing-the-math-module">Importing the Math module</h2>
+<p>Importing is how we gain access to all the functions defined inside a module. \
+We can import the Math module with the following simple line of code. By convention, import statements are placed at the top of your program.\
+<code>import math</code></p>
+<p>What are some useful functions of the math library?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">math</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="mf">3.141592653589793</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="mi">2</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="mi">1</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="mf">8.0</span>
+</code></pre></div></p>
+<p>Lets break down the above lines of code.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">math</span>
+</code></pre></div>
+We imported the math module for our use.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="mf">3.141592653589793</span>
+</code></pre></div>
+This returns the float value of the first few digits of the mathematical value of π (<code>pi</code>), to which is of course <code>3.141592653589793</code>.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="mi">2</span>
+</code></pre></div>
+The <code>math.ceil</code> function will take in a float as input, and rounds a number UP to the nearest integer, in this case rounding up <code>1.5</code> would return <code>2</code>.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="mi">1</span>
+</code></pre></div>
+The math.floor function will take in a float as input, and rounds a number DOWN to the nearest integer, in this case rounding down <code>1.5</code> would return <code>1</code>.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="mi">8</span>
+</code></pre></div>
+The <code>math.sqrt</code> function will take in a number as input, and returns the square root, in this case the square root of <code>64</code> is <code>8</code>.</p>
+<h2 id="importing-the-random-module">Importing the Random module</h2>
+<p>Now we will import the random module, allowing us to obtain random numbers without having to write our own random functions.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">random</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1337</span><span class="p">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="mf">0.6177528569514706</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="mf">0.5332655736050008</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="mf">0.36584835924937553</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1337</span><span class="p">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="mf">0.6177528569514706</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="mf">0.5332655736050008</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="mf">0.36584835924937553</span>
+</code></pre></div>
+What's happening here? <code>random.random</code> generates a float value between 0 and 1. But, those numbers are repeating and random numbers should not repeat right? Actually, using the <code>random.seed()</code> function, we have <em>seeded</em> the random number generator. The act of seeding, initializes the program with that specific number, generating random numbers based on the seed. Passing in the same seed, will result in the same random numbers being generated.</p>
 
               
             </article>
