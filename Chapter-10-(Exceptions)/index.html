@@ -240,6 +240,111 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter-2-%28Operations%29/" class="md-nav__link">
+        Chapter 2 (Operations)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter-3-%28Variables-and-Assignments%29/" class="md-nav__link">
+        Chapter 3 (Variables and Assignments)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter-4-%28Types%29/" class="md-nav__link">
+        Chapter 4 (Types)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter-5-%28Conditionals%29/" class="md-nav__link">
+        Chapter 5 (Conditionals)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter-6-%28Functions%29/" class="md-nav__link">
+        Chapter 6 (Functions)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter-8-%28Loops%29/" class="md-nav__link">
+        Chapter 8 (Loops)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chapter-9-%28Modules-and-Packages%29/" class="md-nav__link">
+        Chapter 9 (Modules and Packages)
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -278,6 +383,81 @@
     Types of Exceptions
   </a>
   
+    <nav class="md-nav" aria-label="Types of Exceptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nameerror" class="md-nav__link">
+    NameError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typeerror" class="md-nav__link">
+    TypeError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#valueerror" class="md-nav__link">
+    ValueError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexerror" class="md-nav__link">
+    IndexError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtimeerror" class="md-nav__link">
+    RuntimeError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zerodivisionerror" class="md-nav__link">
+    ZeroDivisionError
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exception-handling-with-try-except-else-finally" class="md-nav__link">
+    Exception Handling with try-except-else-finally
+  </a>
+  
+    <nav class="md-nav" aria-label="Exception Handling with try-except-else-finally">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-syntax-and-program-flow-of-try-except-else-finally" class="md-nav__link">
+    The syntax and program flow of try-except-else-finally
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#try-except" class="md-nav__link">
+    try-except
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -295,36 +475,35 @@
 
 <h1 id="what-are-exceptions">What are Exceptions?</h1>
 <p>Through the past nine chapters, you likely have encountered cases where you code abruptly terminates because something went wrong. A logical error that causes this is termed as an exception, and generally there are a few types that are common. When an exception occurs, we call it <em>throwing</em> an exception. Generally, exceptions have the following format when they are thrown:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Traceback (most recent call last):
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  File &quot;(filename)&quot;, line X, in &lt;module&gt;
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    (the line that caused the exception)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>(exception name): (exception description)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="n">File</span> <span class="s2">&quot;(filename)&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="n">X</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="p">(</span><span class="n">the</span> <span class="n">line</span> <span class="n">that</span> <span class="n">caused</span> <span class="n">the</span> <span class="n">exception</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">(</span><span class="n">exception</span> <span class="n">name</span><span class="p">):</span> <span class="p">(</span><span class="n">exception</span> <span class="n">description</span><span class="p">)</span>
 </code></pre></div>
 <p>If you attempt to reproduce the example exceptions in the shell to get an understanding of how they work, do not worry if the first three lines do not match: The last line of the exception is the most important for understanding what exactly went wrong.</p>
 <h2 id="syntaxerrors">SyntaxErrors</h2>
 <p>You may have encountered SyntaxErrors as you went through the previous chapters. If you did encounter one, you would notice that it doesn't match the format of a thrown exception described above: that would be because SyntaxErrors are not exceptions at all. Unlike exceptions, which are thrown when logic in the program does not add up, SyntaxErrors are thrown because the code itself does not make sense -- it is incomprehensible to the computer. This usually occurs due to typos, and these must be fixed before the program runs at all. Some examples of SyntaxErrors are shown below:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&gt;&gt;&gt; def a()
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>SyntaxError: expected &#39;:&#39;
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>&gt;&gt;&gt; print(&quot;Hello World&quot;]
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>SyntaxError: closing parenthesis &#39;]&#39; does not match opening parenthesis &#39;(&#39;
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>&gt;&gt;&gt; def a():
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    print(&quot;a&quot;)
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>     print(&quot;b&quot;)
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>SyntaxError: unexpected indent
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">a</span><span class="p">()</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="ne">SyntaxError</span><span class="p">:</span> <span class="n">expected</span> <span class="s1">&#39;:&#39;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">]</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="ne">SyntaxError</span><span class="p">:</span> <span class="n">closing</span> <span class="n">parenthesis</span> <span class="s1">&#39;]&#39;</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">match</span> <span class="n">opening</span> <span class="n">parenthesis</span> <span class="s1">&#39;(&#39;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">a</span><span class="p">():</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="ne">SyntaxError</span><span class="p">:</span> <span class="n">unexpected</span> <span class="n">indent</span>
 </code></pre></div>
 <h2 id="types-of-exceptions">Types of Exceptions</h2>
 <p>There are many kinds of exceptions in Python. Here, we will be going through the types that are more commonly run into.</p>
-<ol>
-<li>NameError
-NameError occur when a term that is used, whether a variable or function, is not defined when it is trying to be used. This can arise from a few reasons. The easiest to resolve is simply that you misspelled the name of the variable, as in the example below:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&gt;&gt;&gt; var1 = 5
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>&gt;&gt;&gt; vat1
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Traceback (most recent call last):
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  File &quot;&lt;pyshell#27&gt;&quot;, line 1, in &lt;module&gt;
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    vat1
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>NameError: name &#39;vat1&#39; is not defined. Did you mean: &#39;var1&#39;?
+<h3 id="nameerror">NameError</h3>
+<p>NameErrors occur when a term that is used, whether a variable or function, is not defined when it is trying to be used. This can arise from a few reasons. The easiest to resolve is simply that you misspelled the name of the variable, as in the example below:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">var1</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">vat1</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#27&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">vat1</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;vat1&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span><span class="o">.</span> <span class="n">Did</span> <span class="n">you</span> <span class="n">mean</span><span class="p">:</span> <span class="s1">&#39;var1&#39;</span><span class="err">?</span>
 </code></pre></div>
-Python is generally kind enough to try and catch typos for you, as shown above. If this is not the case, then you should check your variable scope -- perhaps you are trying to reference a local variable from a global context, such as in the following case:
+Python is generally kind enough to try and catch typos for you, as shown above. If this is not the case, then you should check your variable scope -- perhaps you are trying to reference a local variable from a global context, such as in the following case. If you encounter such an issue, consider returning the value that you have defined within the function scope to access it in the global scope, if it is required. 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&gt;&gt;&gt; def a():
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    b = 5
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    return b
@@ -333,8 +512,90 @@ Python is generally kind enough to try and catch typos for you, as shown above. 
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  File &quot;&lt;pyshell#25&gt;&quot;, line 1, in &lt;module&gt;
 <a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    b
 <a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>NameError: name &#39;b&#39; is not defined
-</code></pre></div></li>
-</ol>
+</code></pre></div></p>
+<h3 id="typeerror">TypeError</h3>
+<p>TypeErrors result when something is attempted but the input is of the wrong type, for example as shown below:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;1&quot;</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#2&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="s2">&quot;1&quot;</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span> <span class="n">only</span> <span class="n">concatenate</span> <span class="nb">str</span> <span class="p">(</span><span class="ow">not</span> <span class="s2">&quot;int&quot;</span><span class="p">)</span> <span class="n">to</span> <span class="nb">str</span>
+</code></pre></div>
+The solution to TypeErrors is generally to use typecasting, if the operation is intentional. 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="mi">2</span>
+</code></pre></div></p>
+<h3 id="valueerror">ValueError</h3>
+<p>ValueErrors, meanwhile, occur if the input is of the correct type, but uses an unsupported value for the operation. For example, typecasting a string that does not contain an integer to int:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#0&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="ne">ValueError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">literal</span> <span class="k">for</span> <span class="nb">int</span><span class="p">()</span> <span class="k">with</span> <span class="n">base</span> <span class="mi">10</span><span class="p">:</span> <span class="s1">&#39;a&#39;</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;2.0&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#5&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;2.0&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="ne">ValueError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">literal</span> <span class="k">for</span> <span class="nb">int</span><span class="p">()</span> <span class="k">with</span> <span class="n">base</span> <span class="mi">10</span><span class="p">:</span> <span class="s1">&#39;2.0&#39;</span>
+</code></pre></div></p>
+<p>Another example would be trying to take the square root of a negative number.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">math</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#7&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="ne">ValueError</span><span class="p">:</span> <span class="n">math</span> <span class="n">domain</span> <span class="n">error</span>
+</code></pre></div></p>
+<h3 id="indexerror">IndexError</h3>
+<p>IndexErrors occur when an invalid index is used. This occurs when dealing with strings or lists, such as below:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">str1</span> <span class="o">=</span> <span class="s2">&quot;abc&quot;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">str1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#14&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="n">str1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="ne">IndexError</span><span class="p">:</span> <span class="n">string</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">list1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#14&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    <span class="n">list1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="ne">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</code></pre></div></p>
+<p>This commonly occurs in an "off-by-one error", where loops iterate one more time than they should, causing the attempted access of an entry one past the last location. It can also be a result of one-indexing the positions instead of zero-indexing as the language does. An example of an off-by-one error is in the following snippet:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">list3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="nb">print</span> <span class="p">(</span><span class="n">list2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">list3</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="mi">2</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="mi">4</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="mi">6</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="mi">8</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="mi">10</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="mi">12</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#19&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">2</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>    <span class="nb">print</span> <span class="p">(</span><span class="n">list2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">list3</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="ne">IndexError</span><span class="p">:</span> <span class="nb">list</span> <span class="n">index</span> <span class="n">out</span> <span class="n">of</span> <span class="nb">range</span>
+</code></pre></div>
+Remember that the range() function is inclusive of the lower bound and exclusive of the upper bound! For safety, if you want to iterate as many times as the list has entries, the usage of <code>range(len(list))</code> is recommended.</p>
+<h3 id="runtimeerror">RuntimeError</h3>
+<p>RuntimeErrors are generic errors -- they are caused when the exception does not fall into any of the defined categories. A string will be displayed that describes the error.</p>
+<h3 id="zerodivisionerror">ZeroDivisionError</h3>
+<p>ZeroDivisionErrors, as the name suggests, occur when there is an attempted division by zero.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;pyshell#20&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="ne">ZeroDivisionError</span><span class="p">:</span> <span class="n">division</span> <span class="n">by</span> <span class="n">zero</span>
+</code></pre></div></p>
+<h2 id="exception-handling-with-try-except-else-finally">Exception Handling with try-except-else-finally</h2>
+<p>Python, like most programming languages, has an in-built way of catching thrown exceptions and handling them within the code. This allows for the program to gracefully handle the error, instead of unceremoniously terminating. </p>
+<p><strong>DISCLAIMER:</strong> Do NOT use this as a way to bypass exceptions! Most exceptions that are thrown can be avoided simply by modifying the code to not throw them. Using try-except to bypass such exceptions is bad style that will slow down execution. Instead, try-except should only be used to catch errors that cannot be predicted, such as errors from user input.</p>
+<h3 id="the-syntax-and-program-flow-of-try-except-else-finally">The syntax and program flow of try-except-else-finally</h3>
+<p>The syntax of exception handling contains up to four blocks. In the following section, we will slowly add the blocks, starting from the most fundamental components and slowly adding the remaining two.</p>
+<h3 id="try-except">try-except</h3>
+<p>The most basic form of exception handling uses try-except. </p>
 
               
             </article>
