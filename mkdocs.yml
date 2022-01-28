@@ -1,4 +1,4 @@
-site_name: AstroSite
+site_name: LearnPython
 
 theme:
   name: 'material'
@@ -54,5 +54,14 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Home: index.md
-  - 'Getting Started.md'
+  - Home: Home.md
+  - 'Chapter-0-(Installation).md'
+  - 'Chapter-1-(Intro-To-Python-and-IDLE).md'
+  - 'Chapter-2-(Operations).md'
+  - 'Chapter-3-(Variables-and-Assignments).md'
+  - 'Chapter-4-(Types).md'
+  - 'Chapter-5-(Conditionals).md'
+  - 'Chapter-6-(Functions).md'
+  - 'Chapter-8-(Loops).md'
+  - 'Chapter-9-(Modules-and-Packages).md'
+  - 'Chapter-10-(Exceptions).md'

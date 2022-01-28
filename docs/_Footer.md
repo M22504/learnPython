@@ -1,0 +1,1 @@
+By a team of students from NUS High School, aiming to make coding easier for everyone.
