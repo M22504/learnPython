@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-astrosite" class="md-skip">
+        <a href="#the-curriculum" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to Astrosite!
+              Home
             
           </span>
         </div>
@@ -377,8 +377,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -387,16 +385,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    Features
+  <a href="#the-curriculum" class="md-nav__link">
+    The Curriculum
   </a>
   
-    <nav class="md-nav" aria-label="Features">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-details" class="md-nav__link">
+    Session Details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    Lesson Plan
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#latex-support" class="md-nav__link">
-    LaTeX Support
+  <a href="#lesson-1" class="md-nav__link">
+    Lesson 1
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activities-in-chapter-1" class="md-nav__link">
+    Activities in Chapter 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-2" class="md-nav__link">
+    Lesson 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-3" class="md-nav__link">
+    Lesson 3
   </a>
   
 </li>
@@ -419,25 +458,174 @@
               
                 
 
-<h1 id="welcome-to-astrosite">Welcome to Astrosite!</h1>
-<p>Astrosite is a basic template to create Astronomy-related Websites in MkDocs with Material as a theme. This is a sample site template for the Astronomy Club CCA. You can use this for Theory and more stuff.</p>
-<h2 id="features">Features</h2>
-<h3 id="latex-support">LaTeX Support</h3>
-<p><img alt="" src="img/orbital.png" /></p>
-<p>The MkDocs system implemented provides comprehensive LaTeX support. By enclosing within a <code>$$ ... $$</code> for breakout highlighted LaTeX posts, or <code>$ ... $</code> for inline LateX, you can display mathematical text and information in a proper format.</p>
-<p>For instance, <code>$x_a^b$</code> gives <span class="arithmatex">\(x_a^b\)</span>, while <code>$e^{-x^2}$</code> will give <span class="arithmatex">\(e^{-x^2}\)</span>, which is pretty helpful for highlighting variables or values between text.</p>
-<p>On the other hand, we also have larger equations like the following:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="sb">$$</span><span class="nv">\vec</span><span class="nb"> F_g </span><span class="o">=</span><span class="nb"> </span><span class="o">-</span><span class="nb">G </span><span class="nv">\frac</span><span class="nb">{Mm}{r^</span><span class="m">2</span><span class="nb">} </span><span class="nv">\hat</span><span class="nb"> r</span><span class="s">$$</span>
-</code></pre></div>
-<p>gives</p>
-<div class="arithmatex">\[\vec F_g = -G \frac{Mm}{r^2} \hat r\]</div>
-<p>Which is, of course, the vectorised equation of Universal Gravitation. Similarly, something like as follows:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="sb">$$</span><span class="nv">\begin</span><span class="nb">{align</span><span class="o">*</span><span class="nb">} g &amp;</span><span class="o">=</span><span class="nb"> G </span><span class="nv">\frac</span><span class="nb">{M}{r^</span><span class="m">2</span><span class="nb">} </span><span class="nv">\\</span><span class="nb"> &amp;</span><span class="o">=</span><span class="nb"> </span><span class="m">9</span><span class="nb">.</span><span class="m">806</span><span class="nb"> </span><span class="o">-</span><span class="nb"> </span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">2</span><span class="nb">} </span><span class="o">(</span><span class="m">9</span><span class="nb">.</span><span class="m">832</span><span class="nb"> </span><span class="o">-</span><span class="nb"> </span><span class="m">9</span><span class="nb">.</span><span class="m">780</span><span class="o">)</span><span class="nb"> </span><span class="nv">\times</span><span class="nb"> </span><span class="nv">\cos</span><span class="nb"> </span><span class="nv">\left</span><span class="o">(</span><span class="nb"> </span><span class="m">2</span><span class="nv">\theta</span><span class="nb"> </span><span class="nv">\right</span><span class="o">)</span><span class="nb"> </span><span class="nv">\end</span><span class="nb">{align</span><span class="o">*</span><span class="nb">}</span><span class="s">$$</span>
-</code></pre></div>
-<p>It yields the following result, where <span class="arithmatex">\(\theta\)</span> denotes the angle of elevation.</p>
-<div class="arithmatex">\[\begin{align*} g &amp;= G \frac{M}{r^2} \\ &amp;= 9.806 - \frac{1}{2} (9.832 - 9.780) \times \cos \left( 2\theta \right) \end{align*}\]</div>
-<p>This is useful especially in Physics-heavy fields of Astronomy, since they do require LaTeX for focusing on them.</p>
-<p>Note that multiline statements still require it to be in one line since you are using markdown.</p>
+  <h1>Home</h1>
+
+<p>Welcome to the Python Coding Workshop!</p>
+<h2 id="the-curriculum">The Curriculum</h2>
+<p>This Coding Workshop covers the fundamentals of the Python Programming Language, and is ideally taught over 3 Days with
+2 Hours of Lessons per day. The topics are as follows:</p>
+<table>
+    <tr>
+        <th colspan="1" rowspan="1">S/N</th>
+        <th colspan="1" rowspan="1">Topic</th>
+        <th colspan="1" rowspan="1">Sub-Topic</th>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2">1</td>
+        <td colspan="1" rowspan="2"><a href="https://github.com/M22504/coding-workshop/wiki/Lesson-1-(Intro-To-Python-and-IDLE)">Intro to Python and IDLE</a></td>
+        <td colspan="1" rowspan="1">Using <code>print</code> and <code>input</code> functions</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1">Accessing IDLE</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2">2</td>
+        <td colspan="1" rowspan="2"><a href="https://github.com/M22504/coding-workshop/wiki/Lesson-2-(Operations)">Operations</a></td>
+        <td colspan="1" rowspan="1">Basic Arithmetic (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code>, <code>%</code>, <code>**</code>)</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1">Order and Operations (BODMAS/PEMDAS)</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2">3</td>
+        <td colspan="1" rowspan="2"><a href="https://github.com/M22504/coding-workshop/wiki/Lesson-3-(Variables-and-Assignment)">Variables & Assignment</a></td>
+        <td colspan="1" rowspan="1">Box Analogy</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1">Assignment Statements (<code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code> &hellip;)</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2">4</td>
+        <td colspan="1" rowspan="2"><a href="https://github.com/M22504/coding-workshop/wiki/Lesson-4-(Types)">Types</a></td>
+        <td colspan="1" rowspan="1"><code>int</code>, <code>float</code>, <code>bool</code>, <code>str</code>, <code>None</code></td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1">Type Casting</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="3">5</td>
+        <td colspan="1" rowspan="3"><a href="https://github.com/M22504/coding-workshop/wiki/Lesson-5-(Conditionals)">Conditionals</a></td>
+        <td colspan="1" rowspan="1"><code>if</code> Statement</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1"><code>else</code> Statement</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1"><code>elif</code> Statement and Control Flow</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2">6</td>
+        <td colspan="1" rowspan="2">Loops</td>
+        <td colspan="1" rowspan="1"><code>for</code> Loop</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1"><code>while</code> Loop</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="3">7</td>
+        <td colspan="1" rowspan="3">Functions</td>
+        <td colspan="1" rowspan="1">Defining Functions</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1"><code>return</code> Statement and <code>lambda</code> Functions</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1">Functions as Objects (e.g. <code>map</code>, <code>filter</code>, etc.)</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2">8</td>
+        <td colspan="1" rowspan="2">Arrays / Lists</td>
+        <td colspan="1" rowspan="1">Storage, Append and Remove</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1">Indexing (and String Indexing)</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2">9</td>
+        <td colspan="1" rowspan="2">External Libraries</td>
+        <td colspan="1" rowspan="1"><code>math</code> Library</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1"><code>random</code> Library</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2">10</td>
+        <td colspan="1" rowspan="2">Exceptions and Error Handling</td>
+        <td colspan="1" rowspan="1">Exceptions</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1"><code>try</code>, <code>except</code>, <code>else</code> and <code>finally</code> Statements</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="4">11</td>
+        <td colspan="1" rowspan="4">External Systems</td>
+        <td colspan="1" rowspan="1">Accessing the Command Line</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1"><code>pip</code></td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1">PyPI and <code>numpy</code></td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1">Docs (+ Debugger)</td>
+    </tr>
+</table>
+
+<h2 id="session-details">Session Details</h2>
+<p>Our sessions will take place from 16th to 18th March on Zoom or Teams. The current curriculum plan is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Date</th>
+<th>Duration</th>
+<th>Topics Covered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Day 1</td>
+<td>16th March</td>
+<td>2 Hours</td>
+<td>Topics 1 - 4</td>
+</tr>
+<tr>
+<td>Day 2</td>
+<td>17th March</td>
+<td>2 Hours</td>
+<td>Topics 5 - 8</td>
+</tr>
+<tr>
+<td>Day 3</td>
+<td>18th March</td>
+<td>2 Hours</td>
+<td>Topics 9 - 11</td>
+</tr>
+</tbody>
+</table>
+<p>We have yet to trial run this curriculum, so we will require a lot more time to confirm this schedule.</p>
+<h2 id="lesson-plan">Lesson Plan</h2>
+<h3 id="lesson-1">Lesson 1</h3>
+<p>In lesson 1, we will be covering the following topics:
+1. Intro to Python and IDLE (Expected Time: 15 minutes)
+2. Operations (Expected Time: 15 minutes)
+3. Variables and Assignments (Expected Time: 30 minutes)
+4. Types (Expected Time: 50 minutes)</p>
+<h4 id="activities-in-chapter-1">Activities in Chapter 1</h4>
+<h3 id="lesson-2">Lesson 2</h3>
+<ol>
+<li>Conditionals (Expected Time: 25 minutes)</li>
+<li>Functions (Expected Time: 30 minutes)</li>
+<li>Loops (Expected Time: 20 minutes)</li>
+<li>Arrays and Lists (Expected Time: 25 minutes)</li>
+</ol>
+<h3 id="lesson-3">Lesson 3</h3>
+<ol>
+<li>Modules and Packages (Expected Time: 30 minutes)</li>
+<li>Exceptions (Expected Time: 25 minutes)</li>
+<li>External Systems - Going Forward (Expected Time: 55 minutes)</li>
+</ol>
 
               
             </article>
